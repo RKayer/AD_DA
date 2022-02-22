@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb 22 14:06:28 2022
+# Process ID: 14612
+# Current directory: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.runs/impl_2
+# Command line: vivado.exe -log hs_ad_da.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hs_ad_da.tcl -notrace
+# Log file: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.runs/impl_2/hs_ad_da.vdi
+# Journal file: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source hs_ad_da.tcl -notrace

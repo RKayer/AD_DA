@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb 22 19:27:46 2022
+# Process ID: 12544
+# Current directory: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15356 D:\FPGA\ZYNQ_7010_FPGA\18_hs_ad_da\hs_ad_da.xpr
+# Log file: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/vivado.log
+# Journal file: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.xpr
+update_compile_order -fileset sources_1
+update_files -from_files D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/sources_1/new/fifo_wr.v -to_files D:/FPGA/ZYNQ_7010_FPGA/8_ip_fifo/ip_fifo.srcs/sources_1/new/fifo_wr.v -filesets [get_filesets *]
+update_files -from_files D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/sources_1/new/fifo_rd.v -to_files D:/FPGA/ZYNQ_7010_FPGA/8_ip_fifo/ip_fifo.srcs/sources_1/new/fifo_rd.v -filesets [get_filesets *]
+update_files -from_files D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_rgb_colorbar.v -to_files D:/FPGA/ZYNQ_7010_FPGA/10_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_rgb_colorbar.v -filesets [get_filesets *]
+update_files -from_files D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/sources_1/new/rd_id.v -to_files D:/FPGA/ZYNQ_7010_FPGA/10_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/rd_id.v -filesets [get_filesets *]
+update_files -from_files D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/sources_1/new/clk_div.v -to_files D:/FPGA/ZYNQ_7010_FPGA/10_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/clk_div.v -filesets [get_filesets *]
+update_files -from_files D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v -to_files D:/FPGA/ZYNQ_7010_FPGA/10_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_display.v -filesets [get_filesets *]
+update_files -from_files D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_driver.v -to_files D:/FPGA/ZYNQ_7010_FPGA/10_lcd_rgb_colorbar/lcd_rgb_colorbar.srcs/sources_1/new/lcd_driver.v -filesets [get_filesets *]
+synth_design -rtl -name rtl_1
