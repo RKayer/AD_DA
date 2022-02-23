@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Tue Feb 22 14:08:18 2022
+| Date                      : Thu Feb 24 00:08:47 2022
 | Host                      : DESKTOP-T0O4NS9 running 64-bit major release  (build 9200)
 | Command                   : report_io -file hs_ad_da_io_placed.rpt
 | Design                    : hs_ad_da

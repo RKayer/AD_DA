@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.srcs/constrs_1/new/hs_ad_da.xdc rfile:../../../hs_ad_da.srcs/constrs_1/new/hs_ad_da.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/constrs_1/new/hs_ad_da.xdc rfile:../../../hs_ad_da.srcs/constrs_1/new/hs_ad_da.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {IOSTANDARD LVCMOS33 PACKAGE_PIN U18} [get_ports sys_clk]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

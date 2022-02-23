@@ -2,21 +2,462 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Feb 22 19:40:51 2022
-# Process ID: 3144
-# Current directory: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13412 D:\FPGA\ZYNQ_7010_FPGA\18_hs_ad_da\hs_ad_da.xpr
-# Log file: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/vivado.log
-# Journal file: D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da\vivado.jou
+# Start of session at: Thu Feb 24 01:26:57 2022
+# Process ID: 692
+# Current directory: D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19284 D:\FPGA\ZYNQ_7010_FPGA\hs_ad_da\hs_ad_da.xpr
+# Log file: D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/vivado.log
+# Journal file: D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/FPGA/ZYNQ_7010_FPGA/18_hs_ad_da/hs_ad_da.xpr
+open_project D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2018/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 975.664 ; gain = 118.648
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 861.012 ; gain = 238.379
 update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: hs_ad_da
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1223.504 ; gain = 83.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hs_ad_da' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:51]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:52]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:53]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:54]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:55]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:56]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:57]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:58]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:59]
+INFO: [Synth 8-6157] synthesizing module 'da_wave_send' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/da_wave_send.v:23]
+	Parameter FREQ_ADJ bound to: 8'b00000101 
+INFO: [Synth 8-6155] done synthesizing module 'da_wave_send' (1#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/da_wave_send.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rom_256x8b' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/rom_256x8b_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_256x8b' (2#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/rom_256x8b_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ad_wave_rec' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/ad_wave_rec.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ad_wave_rec' (3#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/ad_wave_rec.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (4#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'u_fifo_generator_0' of module 'fifo_generator_0' requires 13 connections, but only 12 given [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:95]
+INFO: [Synth 8-6157] synthesizing module 'fifo_wr' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/fifo_wr.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_wr' (5#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/fifo_wr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_rd' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/fifo_rd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_rd' (6#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/fifo_rd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_colorbar' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_rgb_colorbar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rd_id' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/rd_id.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rd_id' (7#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/rd_id.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (8#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:23]
+	Parameter WHITE bound to: 24'b111111111111111111111111 
+	Parameter BLACK bound to: 24'b000000000000000000000000 
+	Parameter RED bound to: 24'b111111110000000000000000 
+	Parameter GREEN bound to: 24'b000000001111111100000000 
+	Parameter BLUE bound to: 24'b000000000000000011111111 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:149]
+INFO: [Synth 8-6157] synthesizing module 'ila_2' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_2' (9#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/ila_2_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_2'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:149]
+WARNING: [Synth 8-6014] Unused sequential element dly_cnt_reg was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:88]
+INFO: [Synth 8-4471] merging register 'char_reg[14][47:0]' into 'char_reg[15][47:0]' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+INFO: [Synth 8-4471] merging register 'char_reg[13][47:0]' into 'char_reg[15][47:0]' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+INFO: [Synth 8-4471] merging register 'char_reg[12][47:0]' into 'char_reg[15][47:0]' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+INFO: [Synth 8-4471] merging register 'char_reg[3][47:0]' into 'char_reg[15][47:0]' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+INFO: [Synth 8-4471] merging register 'char_reg[2][47:0]' into 'char_reg[15][47:0]' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+INFO: [Synth 8-4471] merging register 'char_reg[1][47:0]' into 'char_reg[15][47:0]' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+INFO: [Synth 8-4471] merging register 'char_reg[0][47:0]' into 'char_reg[15][47:0]' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[14] was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[13] was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[12] was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[3] was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[2] was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[1] was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-6014] Unused sequential element char_reg[0] was removed.  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:59]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1023] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1022] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1021] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1020] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1019] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1018] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1017] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1016] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1015] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1014] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1013] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1012] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1011] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1010] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1009] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1008] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1007] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1006] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1005] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1004] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1003] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1002] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1001] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[1000] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[999] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[998] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[997] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[996] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[995] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[994] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[993] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[992] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[991] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[990] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[989] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[988] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[987] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[986] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[985] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[984] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[983] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[982] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[981] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[980] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[979] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[978] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[977] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[976] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[975] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[974] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[973] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[972] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[971] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[970] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[969] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[968] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[967] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[966] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[965] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[964] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[963] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[962] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[961] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[960] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[959] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[958] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[957] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[956] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[955] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[954] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[953] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[952] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[951] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[950] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[949] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[948] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[947] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[946] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[945] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[944] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[943] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[942] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[941] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[940] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[939] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[938] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[937] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[936] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[935] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[934] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[933] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[932] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[931] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[930] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[929] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[928] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[927] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[926] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[925] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+WARNING: [Synth 8-5788] Register lcd_data_reg[924] in module lcd_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:87]
+INFO: [Common 17-14] Message 'Synth 8-5788' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display' (10#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_display.v:23]
+WARNING: [Synth 8-350] instance 'u_lcd_display' of module 'lcd_display' requires 12 connections, but only 11 given [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_rgb_colorbar.v:77]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_driver.v:23]
+	Parameter H_SYNC_4342 bound to: 11'b00000101001 
+	Parameter H_BACK_4342 bound to: 11'b00000000010 
+	Parameter H_DISP_4342 bound to: 11'b00111100000 
+	Parameter H_FRONT_4342 bound to: 11'b00000000010 
+	Parameter H_TOTAL_4342 bound to: 11'b01000001101 
+	Parameter V_SYNC_4342 bound to: 11'b00000001010 
+	Parameter V_BACK_4342 bound to: 11'b00000000010 
+	Parameter V_DISP_4342 bound to: 11'b00100010000 
+	Parameter V_FRONT_4342 bound to: 11'b00000000010 
+	Parameter V_TOTAL_4342 bound to: 11'b00100011110 
+	Parameter H_SYNC_7084 bound to: 11'b00010000000 
+	Parameter H_BACK_7084 bound to: 11'b00001011000 
+	Parameter H_DISP_7084 bound to: 11'b01100100000 
+	Parameter H_FRONT_7084 bound to: 11'b00000101000 
+	Parameter H_TOTAL_7084 bound to: 11'b10000100000 
+	Parameter V_SYNC_7084 bound to: 11'b00000000010 
+	Parameter V_BACK_7084 bound to: 11'b00000100001 
+	Parameter V_DISP_7084 bound to: 11'b00111100000 
+	Parameter V_FRONT_7084 bound to: 11'b00000001010 
+	Parameter V_TOTAL_7084 bound to: 11'b01000001101 
+	Parameter H_SYNC_7016 bound to: 11'b00000010100 
+	Parameter H_BACK_7016 bound to: 11'b00010001100 
+	Parameter H_DISP_7016 bound to: 11'b10000000000 
+	Parameter H_FRONT_7016 bound to: 11'b00010100000 
+	Parameter H_TOTAL_7016 bound to: 11'b10101000000 
+	Parameter V_SYNC_7016 bound to: 11'b00000000011 
+	Parameter V_BACK_7016 bound to: 11'b00000010100 
+	Parameter V_DISP_7016 bound to: 11'b01001011000 
+	Parameter V_FRONT_7016 bound to: 11'b00000001100 
+	Parameter V_TOTAL_7016 bound to: 11'b01001111011 
+	Parameter H_SYNC_1018 bound to: 11'b00000001010 
+	Parameter H_BACK_1018 bound to: 11'b00001010000 
+	Parameter H_DISP_1018 bound to: 11'b10100000000 
+	Parameter H_FRONT_1018 bound to: 11'b00001000110 
+	Parameter H_TOTAL_1018 bound to: 11'b10110100000 
+	Parameter V_SYNC_1018 bound to: 11'b00000000011 
+	Parameter V_BACK_1018 bound to: 11'b00000001010 
+	Parameter V_DISP_1018 bound to: 11'b01100100000 
+	Parameter V_FRONT_1018 bound to: 11'b00000001010 
+	Parameter V_TOTAL_1018 bound to: 11'b01100110111 
+	Parameter H_SYNC_4384 bound to: 11'b00010000000 
+	Parameter H_BACK_4384 bound to: 11'b00001011000 
+	Parameter H_DISP_4384 bound to: 11'b01100100000 
+	Parameter H_FRONT_4384 bound to: 11'b00000101000 
+	Parameter H_TOTAL_4384 bound to: 11'b10000100000 
+	Parameter V_SYNC_4384 bound to: 11'b00000000010 
+	Parameter V_BACK_4384 bound to: 11'b00000100001 
+	Parameter V_DISP_4384 bound to: 11'b00111100000 
+	Parameter V_FRONT_4384 bound to: 11'b00000001010 
+	Parameter V_TOTAL_4384 bound to: 11'b01000001101 
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (11#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_driver.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_colorbar' (12#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/lcd_rgb_colorbar.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:151]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (13#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:158]
+INFO: [Synth 8-6157] synthesizing module 'ila_1' [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_1' (14#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/.Xil/Vivado-692-DESKTOP-T0O4NS9/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_fifo_wr'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:112]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_lcd_rgb_colorbar'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:134]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_fifo_generator_0'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:95]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_fifo_rd'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:123]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:158]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ad_wave_rec'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:85]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:151]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_rom_256x8b'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:78]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_da_wave_send'. This will prevent further optimization [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'hs_ad_da' (15#1) [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/new/hs_ad_da.v:23]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port fifo_wr_en
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[10]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[9]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[8]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[7]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[6]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[5]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[4]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[3]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[2]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[1]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port ad_data[0]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[10]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[9]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[8]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[7]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[6]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[5]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[4]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[3]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[2]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[1]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port h_disp[0]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[10]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[9]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[8]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[7]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[6]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[5]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[4]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[3]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[2]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[1]
+WARNING: [Synth 8-3331] design lcd_display has unconnected port v_disp[0]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[22]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[21]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[20]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[19]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[18]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[17]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[16]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[14]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[13]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[12]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[11]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[10]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[9]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[8]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[6]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[5]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[4]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[3]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[2]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[1]
+WARNING: [Synth 8-3331] design rd_id has unconnected port lcd_rgb[0]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[7]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[6]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[5]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[4]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[3]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[2]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[1]
+WARNING: [Synth 8-3331] design fifo_rd has unconnected port fifo_dout[0]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[7]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[6]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[5]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[4]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[3]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[2]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[1]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[0]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_otr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1355.055 ; gain = 215.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1355.055 ; gain = 215.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1355.055 ; gain = 215.141
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/rom_256x8b_1/rom_256x8b.dcp' for cell 'u_rom_256x8b'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.dcp' for cell 'u_fifo_generator_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_0_1/ila_0.dcp' for cell 'ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_1/ila_1.dcp' for cell 'ila_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_2/ila_2.dcp' for cell 'u_lcd_rgb_colorbar/u_lcd_display/ila_2'
+INFO: [Netlist 29-17] Analyzing 255 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[1]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[1]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[2]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[2]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[3]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[3]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[4]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[4]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[4]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[4]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[5]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[5]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[5]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[5]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[6]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[6]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[6]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[6]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[7]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[7]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: ad_data_IBUF[7]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets ad_data_IBUF[7]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: lcd_vs
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets lcd_vs]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: lcd_vs
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets lcd_vs]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_clk
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_clk]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_clk
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_clk]
+INFO: [Opt 31-140] Inserted 9 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 12 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Finished Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_1/inst'
+Finished Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'ila_1/inst'
+Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_fifo_generator_0/U0'
+Finished Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'u_fifo_generator_0/U0'
+Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'u_lcd_rgb_colorbar/u_lcd_display/ila_2/inst'
+Finished Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/ila_2/ila_v6_2/constraints/ila.xdc] for cell 'u_lcd_rgb_colorbar/u_lcd_display/ila_2/inst'
+Parsing XDC File [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/constrs_1/new/hs_ad_da.xdc]
+Finished Parsing XDC File [D:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/constrs_1/new/hs_ad_da.xdc]
+Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'u_fifo_generator_0/U0'
+Finished Parsing XDC File [d:/FPGA/ZYNQ_7010_FPGA/hs_ad_da/hs_ad_da.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'u_fifo_generator_0/U0'
+Sourcing Tcl File [D:/vivado2018/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/vivado2018/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/vivado2018/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/vivado2018/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'u_fifo_generator_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado2018/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hs_ad_da_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hs_ad_da_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1572.320 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1572.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 128 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1596.348 ; gain = 456.434
+71 Infos, 205 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:32 . Memory (MB): peak = 1596.348 ; gain = 456.434
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 1939 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  tcl.collectionResultDisplayLimit
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2280.344 ; gain = 11.578
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2280.344 ; gain = 11.578
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2280.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 137 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 128 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 2375.066 ; gain = 746.199
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2483.590 ; gain = 101.938
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Feb 22 19:41:23 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 24 01:51:28 2022...
