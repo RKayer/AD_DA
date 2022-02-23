@@ -55,18 +55,42 @@ TFT-LCD 的全称是 Thin Film Transistor-Liquid Crystal Display，即薄膜晶�
 
 
 ##	软件设计
-软件开发平台为vivado，创建工程后将顶层模块命名为hs_ad_da，然后再相继创建几个所需的模块：波形产生da_wave_send、波形采集
-ad_wave_rec、写FIFO fifo_wr、读FIFO fifo_rd、LCD器件配置ID信息rd_id、LCD时钟分频模块clk_div、LCD显示lcd_display、LCD驱动
-lcd_driver。
-另外，还需要配置两个IP。配置ROMIP核：将memory type配置为单端口RAM，宽度选择8bit，深度选择256。然后导入COE FILE，也就是波形文件。
-配置FIFO IP核：将fifo implementation（实现方式）选择为独立的BRAM块，读写宽度选择为8bit，深度选择为1024。
+软件开发平台为vivado，创建工程后将顶层模块命名为hs_ad_da，然后再相继创建几个所需的模块：波形产生da_wave_send、波形采集ad_wave_rec、写FIFO fifo_wr、读FIFO fifo_rd、LCD器件配置ID信息rd_id、LCD时钟分频模块clk_div、LCD显示lcd_display、LCD驱动lcd_driver。
 
+![](https://gitee.com/RKayer/blogimage/raw/master/img/ad_da.png)
+
+另外，还需要配置两个IP。配置ROMIP核：将memory type配置为单端口RAM，宽度选择8bit，深度选择256。然后导入COE FILE，也就是波形文件。配置FIFO IP核：将fifo implementation（实现方式）选择为独立的BRAM块，读写宽度选择为8bit，深度选择为1024。
+
+![](https://gitee.com/RKayer/blogimage/raw/master/img/block.png)
+
+DA模块转换的时钟是系统时钟50MHZ，周期就是20ns，这里降低了读ROM的时钟，每6个时钟才读取一次ROM的数据，所以正弦波模拟量输出的周期为
+			   	           T= 256×20×6                               （3.1）
+AD转换时钟为25MHZ，然后FIFO的写时钟相应的也为25MHZ。那么一个周期可以转换的数字量为
+					       data_cnt=T ÷40 ns=768                       (3.2)
+LCD的分辨率是800*480，波形显示直接截取其中横像素坐标在768以下，纵坐标在100-355之间的部分，纵坐标共可以有256种数据，正好可以对应波形的八位数据0 – 256。每个横坐标对应一个波形数据，如果相应的纵坐标等于相应波形数据，那么使LCD中该像素显示绿色，其他地方显示黑色。除此之外，在边界区域用蓝色框起来，栅格用白色竖直线条勾勒显现出来。
+
+![](https://gitee.com/RKayer/blogimage/raw/master/img/lcd_code.png)
+
+为了LCD能显示大于一个周期的波形便于观察，可以将FIFO的时钟设置为50MHZ，而LCD的像素时钟为25MHZ，那么在25MHZ的时钟域下将FIFO读出的数据赋值给一个二维数组：
+					   reg [7:0]   lcd_data[1023:0]			         （3.3）
+就会隔一个波形数据才赋值一次，相当于将波形数据进行压缩了，但是最终呈现的波形规律依旧不变，而可以显示2个周期的波形。
+既然显示了2个周期，那个中间六条白色栅格线所分隔形成的八个栅格，每个栅格代表的时间为：
+				           	t_div=T ÷4=7680ns                       （3.4）
+我们可以根据这个数字判断出波形的频率。
+在本系统中，像素时钟为25MHZ，FIFO的读写时钟分别为50MHZ，25MHZ，没办法做到对完整连续波形的实时显示，所以只能采集一段再显示，显示若干帧之后再进行采集显示。这样可以保证显示波形的稳定和连续。
 
 
 ##	实物结果展示
 
+![](https://gitee.com/RKayer/blogimage/raw/master/img/sin_wave.png)
 
+![](https://gitee.com/RKayer/blogimage/raw/master/img/tran_wave.png)
 
+![](https://gitee.com/RKayer/blogimage/raw/master/img/20220224022057.png)
+
+![](https://gitee.com/RKayer/blogimage/raw/master/img/20220224022158.png)
+
+![](https://gitee.com/RKayer/blogimage/raw/master/img/20220224022237.png)
 
 ##	总结与规划
 之前学过STM32单片机，看到这个题目的时候觉得并不复杂，步骤挺简单的，然而，作为一个FPGA初学者来说用FPGA、verilog、vivado等等新工具
